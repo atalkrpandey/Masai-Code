@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            display: flex;
+        justify-content: center;
+    }
+        .heading>h1{
+            
+            font-size: 25px;
+            font-weight: bold;
+            width: 22%;
+        }
+        #container{
+            width: 70%;
+            height: 250px;
+            border: 1px solid red;
+            display: flex;
+            margin: auto;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+        #container>div{
+            width: 25%;
+            height: 100%;
+            border: 1px solid green;
+          
+            
+
+        }
+        #container+div{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button{
+            width: 100PX;
+            height: 30px;
+            border: 1px solid red;
+            text-align: center;
+        }
+        #part{
+            width: 70%;
+            height: 300px;
+            border: 1px solid red;
+            margin: auto;
+          
+            margin-top: 10px;
+        }
+        #part>div:first-child{
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        #part>div>h1{
+            height: 20px;
+            width: 100%;
+            border: 1px solid blue;
+            font-size: 25px;
+            font-weight: bold;
+            
+        }
+        #part>div:last-child{
+            width:100%;
+            height: 150px;
+            border: 1px solid yellow;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+           
+        }
+        #part>div:last-child>div{
+            width: 30%;
+            height: 70%;
+            border: 1px solid green;
+        }
+        #container>div>img{
+            width: 100%;
+            height: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+    <h1>Masai In The News</h1>
+</div>
+    <div id="container">
+       
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png" alt="ERROR">
+            <h2>21 Dec 2021</h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/omidyar.svg" alt="ERROR">
+            <h2>26 Oct 2021</h2>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/indiaQuotient.svg" alt="ERROR">
+            <h2>18 Aug 2021</h2>
+            <h1></h1>
+            <p></p>
+        </div>
+    </div>
+    <div>
+    <button>
+        SEE MORE >
+    </button>
+</div>
+    <div id="part">
+        <div>
+        <h1>Our Investors Who Believes In Us</h1>
+        </div>
+        <div>
+        <div>
+            <img src="img/our-investors/unitus.svg" alt="ERROR">
+        </div>
+        <div>
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-11/Masai%20News_601073.png" alt="ERROR">
+        </div>
+        <div>
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-11/Masai%20News_601073.png" alt="ERROR">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
