@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+           
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 250px;
+            gap: 20px;
+            grid-template-areas:
+            "box1 box2 box3 box4";
+        }
+        #box>div{
+          
+            
+            border: 1px solid red;
+            
+            font-size: 30px;
+            padding-left: 20px;
+            padding-top: 15px;
+
+
+        }
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 150px;
+            padding-left: 20px;
+            background-color: yellow;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+        }
+        #box>div:nth-child(1){
+            background-color: red;
+            grid-area: box1;
+        }
+        #box>div:nth-child(2){
+            background-color:green;
+            grid-area: box2;
+        }
+        #box>div:nth-child(3){
+            background-color:blue;
+            grid-area: box3;
+        }
+        #box>div:nth-child(4){
+            background-color:gray;
+            grid-area: box4;
+        }
+        @media all and (min-width:651px) and (max-width:1050px) {
+         #box{
+             display: grid;
+             grid-template-columns: repeat(2,50%);
+             grid-template-rows: repeat(2,250px);
+             gap: 20px;
+             grid-template-areas:
+             "box1 box3"
+             "box2 box4";
+             
+         } }
+         @media all and (min-width:321px) and (max-width:650px) {
+         #box{
+             display: grid;
+             grid-template-columns: repeat(1,100%);
+             grid-template-rows: repeat(4,250px);
+             gap: 20px;
+             grid-template-areas:
+             "box1"
+             "box4"
+             "box2"
+             "box3";
+            } 
+            
+        
+    </style>
+</head>
+<body>
+    <h1>Navigation</h1>
+    <div id="box">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </div>
+</body>
+</html>
